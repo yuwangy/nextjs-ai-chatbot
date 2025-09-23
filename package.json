@@ -3,14 +3,14 @@
   "version": "3.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --turbo",
-    "build": "tsx lib/db/migrate && next build",
-    "postinstall": "prisma generate",
-    "migrate:deploy": "prisma migrate deploy",
-    "start": "next start",
-    "lint": "biome lint --write --unsafe",
-    "lint:fix": "biome lint --write --unsafe && biome format --write",
-    "format": "biome format --write",
+     "dev": "next dev --turbo",
+     "build": "prisma migrate deploy && next build",
+     "postinstall": "prisma generate",
+     "migrate:deploy": "prisma migrate deploy",
+     "start": "next start",
+     "lint": "biome lint --write --unsafe",
+     "lint:fix": "biome lint --write --unsafe && biome format --write",
+     "format": "biome format --write"
   },
   "dependencies": {
     "@ai-sdk/gateway": "^1.0.15",
