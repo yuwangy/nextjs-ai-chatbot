@@ -5,6 +5,8 @@
   "scripts": {
     "dev": "next dev --turbo",
     "build": "tsx lib/db/migrate && next build",
+    "postinstall": "prisma generate",
+    "migrate:deploy": "prisma migrate deploy",
     "start": "next start",
     "lint": "biome lint --write --unsafe",
     "lint:fix": "biome lint --write --unsafe && biome format --write",
