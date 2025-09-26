@@ -3,14 +3,14 @@
   "version": "3.1.0",
   "private": true,
   "scripts": {
-     "dev": "next dev --turbo",
-     "build": "prisma migrate deploy && next build",
-     "postinstall": "prisma generate",
-     "migrate:deploy": "prisma migrate deploy",
-     "start": "next start",
-     "lint": "biome lint --write --unsafe",
-     "lint:fix": "biome lint --write --unsafe && biome format --write",
-     "format": "biome format --write"
+    "dev": "next dev --turbo",
+    "build": "prisma migrate deploy && next build",
+    "postinstall": "prisma generate",
+    "migrate:deploy": "prisma migrate deploy",
+    "start": "next start",
+    "lint": "biome lint --write --unsafe",
+    "lint:fix": "biome lint --write --unsafe && biome format --write",
+    "format": "biome format --write"
   },
   "dependencies": {
     "@ai-sdk/gateway": "^1.0.15",
@@ -120,5 +120,9 @@
     "tsx": "^4.19.1",
     "typescript": "^5.6.3"
   },
+<<<<<<< HEAD
   "packageManager": "pnpm@10.0.0"
+=======
+  "packageManager": "pnpm@10.0.0+sha512.b8fef5494bd3fe4cbd4edabd0745df2ee5be3e4b0b8b08fa643aa3e4c6702ccc0f00d68fa8a8c9858a735a0032485a44990ed2810526c875e416f001b17df12b"
+>>>>>>> 86a5c1d (chore: update lockfile with pnpm@10)
 }
